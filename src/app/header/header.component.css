@@ -1,0 +1,68 @@
+.main-header
+{
+    width: 100%;
+    padding: .6rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2.5rem;
+}
+
+.main-header__title
+{
+    font-size: 5.75rem;
+    letter-spacing: -1.5px;
+}
+
+.main-header__title--blue
+{
+    color: var(--blue);
+    color: blue;
+    font-size: 3.75rem;
+}
+
+.main-header__title--orange
+{
+    color: var(--orange);
+    color: orange;
+    font-size: 3.75rem;
+}
+
+.main-header__menu ul
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header__menu a
+{
+    padding: .625rem;
+    color: var(--gray);
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.main-header__menu a:hover
+{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.container-menu
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    flex: 1;
+}
+
+.badge-carrinho
+{
+    background-color: var(--dark-blue);
+    padding: .35rem .65rem;
+    border-radius: .25rem;
+    color: white;
+}
