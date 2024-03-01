@@ -1,42 +1,36 @@
-.main-header
-{
+.main-header {
+    height: 120px;
     width: 100%;
-    padding: .6rem 0;
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     column-gap: 2.5rem;
+    position: relative;
 }
 
-.main-header__title
-{
+.main-header__title {
+    display: flex;
     font-size: 5.75rem;
     letter-spacing: -1.5px;
 }
 
-.main-header__title--blue
-{
+.main-header__title--blue {
     color: var(--blue);
-    color: blue;
     font-size: 3.75rem;
 }
 
-.main-header__title--orange
-{
+.main-header__title--orange {
     color: var(--orange);
-    color: orange;
     font-size: 3.75rem;
 }
 
-.main-header__menu ul
-{
+.main-header__menu ul {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.main-header__menu a
-{
+.main-header__menu a {
     padding: .625rem;
     color: var(--gray);
     font-weight: 400;
@@ -45,24 +39,37 @@
     transition: all .3s ease-in-out;
 }
 
-.main-header__menu a:hover
-{
+.main-header__menu a:hover {
     background-color: var(--blue);
     color: #fff;
 }
 
-.container-menu
-{
+.search-form {
+    height: 4rem;
     display: flex;
-    flex-direction: column;
-    row-gap: 1.25rem;
-    flex: 1;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.badge-carrinho
-{
-    background-color: var(--dark-blue);
-    padding: .35rem .65rem;
-    border-radius: .25rem;
-    color: white;
+.search-form input {
+    box-sizing: border-box;
+    height: 3rem;
+    width: 40rem;
+    padding: 0.5rem;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    border: none;
+    transition: all .3s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.search-form button {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--blue);
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
 }
