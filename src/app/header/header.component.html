@@ -12,7 +12,9 @@
                     <a routerLink="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         Carrinho
-                        <span class="badge-shopcart"></span>
+                        <span class="badge-shopcart">
+                            {{ carrinhoService.obterCarrinho().length }}
+                        </span>
                     </a>
                 </li>
                 <li><a routerLink="contact">Contato</a></li>
