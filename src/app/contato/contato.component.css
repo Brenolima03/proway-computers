@@ -1,13 +1,11 @@
-.contact__title
-{
+.contact__title {
     font-size: 44px;
     color: var(--gray);
     font-weight: 700;
     padding: 8px 0;
 }
 
-.contact-form
-{
+.contact-form {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -16,8 +14,7 @@
     min-width: 300px;
 }
 
-.contact-form button
-{
+.contact-form button {
     align-self: flex-end;
     background-color: var(--blue);
     border: none;
@@ -27,25 +24,39 @@
     width: 200px;
 }
 
-.contact-form button:hover
-{
+.contact-form button:hover {
     filter: brightness(1.1);
 }
 
-.contact__container
-{
+.contact__container {
     display: flex;
     flex-flow: row wrap;
     column-gap: 20px;
     padding: 20px 0;
 }
 
-.contact-form button:disabled
-{
+.contact-form button:disabled {
     background-color: var(--gray);
 }
 
-.contact-form button:disabled:hover
-{
+.contact-form button:disabled:hover {
     filter: none;
+}
+/* Garante o estilo consistente da fonte para o textarea */
+.contact-form textarea {
+    font-family: inherit; /* Usa a mesma família de fontes que outros elementos */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    padding: 8px; /* Ajuste o preenchimento conforme necessário */
+    border: 1px solid #333; /* Adiciona borda para consistência, com uma cor mais escura */
+    border-radius: 4px; /* Adiciona um raio de borda para uma aparência mais suave */
+}
+
+/* Adiciona estilos adicionais para o textarea inválido */
+.contact-form textarea.invalid {
+    border-color: red; /* Altera a cor da borda para o estado inválido */
+}
+
+/* Ajusta a cor e a largura da borda para consistência */
+.contact-form textarea {
+    border-color: #666; /* Altera a cor da borda para um tom um pouco menos escuro */
 }

@@ -10,7 +10,7 @@ import { NaoEncontradaComponent } from './nao-encontrada/nao-encontrada.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BarraPesquisaComponent } from './barra-pesquisa/barra-pesquisa.component';
 import { FormsModule } from '@angular/forms';
-
+import { NgxMaskModule } from 'ngx-mask'
 
 @NgModule({
     declarations: [
